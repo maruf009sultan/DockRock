@@ -1,22 +1,22 @@
-DockRock
-Welcome to DockRock! This is a super simple, one-click Bash script that makes it easy to pull a Docker image, zip files from a folder inside it, save the zip to your computer, and share it via a local web server. It’s designed to be user-friendly, with prompts you can skip to use default settings.
-Why Use DockRock?
-Ever needed to grab files from inside a Docker container but got stuck with complex commands or manual steps? DockRock is your solution! It’s a hassle-free way to extract files from any Docker image in just a few clicks. Whether you're a developer, a hobbyist, or just experimenting with Docker, DockRock saves you time and effort by automating the process. No need to dig through container internals—just run the script, answer a few questions (or skip them!), and get your files instantly. It’s like a magic wand for Docker file extraction!
-What It Does
+🌟 DockRock 🚀
+Welcome to DockRock! This is your go-to Bash script for effortlessly pulling files from a Docker container with just one click! 🎉 It grabs a Docker image, zips up files from a folder inside, saves them to your computer, and serves them via a local web server. It’s super simple, with prompts you can skip to use defaults—perfect for beginners and pros alike! 😎
+🎯 Why Use DockRock?
+Struggling to extract files from a Docker container? Tired of typing endless commands? DockRock is here to save the day! 🦸‍♂️ It’s a hassle-free, one-stop tool that:
 
-Grabs a Docker image (default: ubuntu:latest).
-Goes to a folder in the container (default: /app).
-Zips up all the files in that folder.
-Copies the zip file to your computer.
-Starts a web server so you can download the zip from your browser.
+📦 Grabs files from any Docker image in seconds.
+⚡ Automates everything: pull, zip, copy, and serve.
+🛠️ Customizable with easy prompts (or skip them for defaults!).
+🌈 Fun and fast, making Docker file extraction a breeze!
 
-What You Need
+Whether you're a developer, a hobbyist, or just curious about Docker, DockRock makes the process smooth as butter. Try it, and you’ll wonder how you lived without it! 😍
+🛠️ What You Need
+Before rocking with DockRock, make sure you have:
 
-Docker up and running.
-Python 3 installed (for the web server).
-A Bash-compatible terminal (works on Linux, macOS, or WSL on Windows).
+🐳 Docker installed and running.
+🐍 Python 3 for the web server.
+💻 A Bash-compatible terminal (Linux, macOS, or WSL on Windows).
 
-Installation
+🚀 Get Started
 
 Clone the repo:git clone https://github.com/maruf009sultan/DockRock.git
 cd DockRock
@@ -26,27 +26,27 @@ Make the script executable:chmod +x dockrock.sh
 
 
 
-How to Use It
+🎉 How to Use It
 
 Run the script:./dockrock.sh
 
 
-Answer the prompts (or press Enter to use defaults):
+Answer these simple prompts (or hit Enter for defaults):
 Docker image? (default: ubuntu:latest)
 Folder in the container? (default: /app)
-Name for the zip file? (default: app-files.zip)
+Zip file name? (default: app-files.zip)
 
 
-Wait for the magic! The script will:
+Sit back and watch the magic! ✨ DockRock will:
 Pull the Docker image.
-Zip the files from the chosen folder.
+Zip the files from your chosen folder.
 Save the zip to your computer.
-Start a web server on http://localhost:8080.
+Fire up a web server at http://localhost:8080.
 
 
-Open your browser, go to http://localhost:8080, and download your zip file!
+Open your browser, head to http://localhost:8080, and download your zip file! 📥
 
-Example
+📺 Example Run
 $ ./dockrock.sh
 Enter Docker image name [ubuntu:latest]: 
 Enter working directory in container [/app]: 
@@ -56,16 +56,22 @@ Started container with ID: 1f0e37d6cc3d
 Copying zip file from container...
 Starting HTTP server on port 8080...
 
-Tips
+💡 Tips
 
-Make sure Docker is running before you start.
-If the folder you choose doesn’t exist in the container, the script might not work as expected.
-Stop the web server by pressing Ctrl+C when you’re done.
-Want to change something? Feel free to tweak dockrock.sh!
+Ensure Docker is running before you start.
+If the folder you pick doesn’t exist in the container, the script may hiccup. Double-check your folder path!
+Stop the web server with Ctrl+C when you’re done.
+Want to tweak things? Open dockrock.sh and make it your own! 🛠️
 
-Support DockRock
-If you love DockRock, give it a ⭐ star on GitHub to show your support! Want to stay updated on new features or other cool projects? Follow me on GitHub at @maruf009sultan!
-Contributing
-Got ideas to make DockRock even better? Open an issue or submit a pull request on GitHub!
-License
-This project is licensed under the MIT License. Check out the LICENSE file for details.
+⭐ Support DockRock
+Love DockRock? Show it some love! 🌟
+
+Star the repo on GitHub to spread the word! ⭐
+Follow me on GitHub at @maruf009sultan for more awesome projects! 🚀
+
+🤝 Contributing
+Got a cool idea to make DockRock even better? Share it! Open an issue or submit a pull request on GitHub. Let’s make it rock harder! 🤘
+📜 License
+DockRock is licensed under the MIT License. See the LICENSE file for details.
+
+Rock on with DockRock! 🎸
